@@ -51,12 +51,6 @@ button {
     margin-bottom: 0;
 }
 
-.heart {
-    width: 18px;
-    position: relative;
-    top: 4px;
-}
-
 .app-content p {
     font-size: 13px;
     color: #4e4e4e;
