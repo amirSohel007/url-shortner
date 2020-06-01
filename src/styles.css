@@ -28,6 +28,7 @@ button {
     cursor: pointer;
     font-size: 15px;
     letter-spacing: 0.3px;
+    transition: all 0.3s;
 }
 
 .app-wrapper {
@@ -82,6 +83,12 @@ button {
 }
 
 .control-form:focus, button:focus {outline: none;}
+
+button:disabled {
+    background: #2c7be5b3;
+    pointer-events: none;
+    transition: all 0.3s;
+}
 
 @media (max-width:767px){
     .form-inner{

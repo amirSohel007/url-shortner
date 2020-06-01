@@ -1,16 +1,14 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { environment } from './../environments/environment';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { environment as ENV } from "./../environments/environment";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class UrlServiceService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
-
-  urlShortner(longUrl){
-    return this.http.post(environment.apiUrl, {url:longUrl})
+  urlShortner(longUrl) {
+    return this.http.post(ENV.apiUrl, { url: longUrl });
   }
-
 }

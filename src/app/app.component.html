@@ -1,14 +1,15 @@
 <div class="app-wrapper">
   <div class="m-auto">
     <div class="form-inner">
-      <h3>Make Your Url Shorter</h3>
+      <h3>Make Your URL Shorter</h3>
       <input type="text" placeholder="Enter the url here" class="control-form" [(ngModel)]="urlString">
-      <button (click)="convertUrl()"> {{this.processingText ? 'Processing....' : 'Shorten Url'}}</button>
+      <button [disabled]="!urlString" (click)="convertUrl()"> {{this.processingText ? 'Processing....' : 'Shorten URL'}}</button>
       <div class="app-content">
         <p>ShortURL at is a free tool to shorten a URL or reduce a link.</p>
         <p>Use our URL Shortener to create a shortened link making it easy to remember.</p>
       </div>
     </div>
-    <p class="copyright"> <img src="https://pngimg.com/uploads/heart/heart_PNG51337.png" class="heart" alt=""> Design & Developed By <a href="http://acodity.com" target="_blank">Amir Sohel</a></p>
+    <p class="copyright"> <img src="https://pngimg.com/uploads/heart/heart_PNG51337.png" class="heart" alt=""> Design &
+      Developed By <a href="http://acodity.com" target="_blank">Amir Sohel</a></p>
   </div>
 </div>
