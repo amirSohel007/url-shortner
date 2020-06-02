@@ -2,7 +2,7 @@
 
 # Run on local machine
 Please open package.json and replace
-"start": "node server.js" to "start": "ng serve",
+"start": "node server.js" to "start": "ng serve" inside script section
 
 here is live production url 
 https://url-shortner-cyan.now.sh/
