@@ -1,6 +1,5 @@
 import { Component, OnDestroy, OnInit } from "@angular/core";
 import { UrlServiceService } from "../services/url-service.service";
-import { script } from "../assets/script";
 
 @Component({
   selector: "app-root",
