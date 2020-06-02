@@ -83,6 +83,21 @@ button:disabled {
     pointer-events: none;
     transition: all 0.3s;
 }
+.position-relative {
+    position: relative;
+}
+
+.fa-clone {
+    position: absolute;
+    right: 18px;
+    top: 21px;
+    font-size: 18px;
+    color: #636363;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    line-height: 33px;
+}
 
 @media (max-width:767px){
     .form-inner{
